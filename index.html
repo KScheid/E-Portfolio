@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kenyon Scheid Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body onresize="resizeSwitch()">
+    <div class="greyBar">
+        <div class="tab">
+            <button class="menuButton" onclick="openTab('myWork')">My Work</button>
+            <button class="menuButton" onclick="openTab('About')">About</button>
+            <button class="menuButton" onclick="openTab('Contact')">Contact</button>
+            <span class="openInfo" style="font-size:30px;cursor:pointer" onclick="openNav()">+</span>
+        </div>
+
+    </div>
+
+
+    <div class="content">
+        <!--MY WORK SECTION-->
+        <section id="myWork" class="menuTitle">
+            <article>
+                <h3>Liberty Broadband LLC</h3>
+                <a href="https://www.libertybroadbandllc.com/" target="_blank">
+                    <img src="images/lbllc.JPG">
+                </a>
+                <p>I designed and created the website for <a href="https://www.libertybroadbandllc.com/" target="_blank">Liberty Broadband LLC</a>.</p>
+            </article>
+            <article>
+                <h3>Resume</h3>
+                <a href="resume/index.html" target="_blank">
+                    <img src="images/resume.jpg">
+                </a>
+                <p>For a better look at my responsive resume please click <a href="resume/index.html" target="_blank">here</a></p>
+            </article>
+            <article>
+                <h3>Business Card</h3>
+                <a>
+                    <img src="images/businessCard.jpg">
+                </a>
+                <p> </p>
+                <h3>Machiel Klerk Webpage</h3>
+                <a href="http://machielklerk.com/social-entrepreneur" target="_blank">
+                    <img src="images/social.JPG">
+                </a>
+                <p>Here I designed & built the layout for the "Social Entrepreneur" <a href="http://machielklerk.com/social-entrepreneur" target="_blank">page</a>. </p>
+            </article>
+
+        </section>
+        <!--ABOUT SECTION-->
+        <section id="About" class="menuTitle" style="display:none">
+            <h3>About Me</h3>
+            <img src="images/aboutMe.jpg">
+            <p>I live in Ogden, Utah and have been attending Ogden Tech College for the last 2 years Training to be a web developer. I designed and built the website for Liberty Broadband LLC. I enjoy online games and videos. When I'm not on the computer you will find me in the mountains or desert hiking, camping, or skiing.</p>
+        </section>
+
+        <!--CONTACT SECTION-->
+        <section id="Contact" class="menuTitle" style="display:none">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdnm9xpuVmq6hxTgsPeGSxT27Cy-24Epk3dIgkxFkTIB0_msA/viewform?embedded=true" width="640" height="891" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        </section>
+    </div>
+
+
+    <aside class="leftInfoBar" id="myInfo">
+        <div class="container">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="images/closeX.png"></a>
+            <div class="nameNpic">
+                <img src="images/profilePic.jpg" class="profilePic">
+                <!--profile pic-->
+                <li>
+                    <ul>Kenyon Scheid</ul>
+                    <ul ><a href="mailto:Scheid&#046;Kenyon&#064;gmail&#046;com" class="email">moc.liamg@noyneK.diehcS</a></ul>
+                </li>
+            </div>
+        </div>
+    </aside>
+
+    <script src="portolioJS.js"></script>
+</body>
+
+</html>
